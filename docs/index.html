@@ -7,6 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 </head>
 <body>
   <!-- <nav>
@@ -14,26 +15,6 @@
     <a href="#/chapter_02/">第二部分</a>
   </nav> -->
   <div id="app"></div>
-  <script>
-    window.$docsify = {
-      executeScript: true,
-      //themeColor: '#ff0000',
-      name: 'Shell cookbook',
-      repo: 'https://github.com/docsifyjs/docsify/',
-      //coverpage: true,
-      // loadNavbar: true,
-      loadSidebar: true,
-      autoHeader: true,
-      subMaxLevel: 2,
-      alias: {
-      '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      search: {
-        placeholder: '搜索'
-      },
-      // disqus: 'shortname'
-    }
-  </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
@@ -41,5 +22,44 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script> -->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    var num = 0;
+    mermaid.initialize({ startOnLoad: false });
+
+    window.$docsify = {
+      executeScript: true,
+      // onlyCover: true,
+      // themeColor: '#ff0000',
+      name: '我的文档沙盒',
+      repo: 'https://github.com/jinqinghua/kim-doc-sandbox',
+      coverpage: true,
+      loadNavbar: true,
+      loadSidebar: true,
+      autoHeader: true,
+      subMaxLevel: 2,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      search: {
+        placeholder: '搜索'
+      },
+      // disqus: 'shortname'
+
+      // Supports mermaid
+      markdown: {
+        renderer: {
+          code: function(code, lang) {
+            if (lang === "mermaid") {
+              return (
+                      '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+              );
+            }
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+      }
+    }
+  </script>
 </body>
 </html>

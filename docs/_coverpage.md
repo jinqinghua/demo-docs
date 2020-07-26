@@ -1,19 +1,19 @@
 <!-- _coverpage.md -->
-# docsify <small>3.5</small>
+# 老金的文档沙盒 <small>beta</small>
 
-> 一个神奇的文档网站生成器。
+> 演示 markdown + docsify 快速生成在线文档
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- 支持目录，搜索, mermaid
+- github.io 快速发布
+- 老金出品，必属精品
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+![Talk is cheap, show me the code.](https://img.moegirl.org/common/thumb/8/88/Talkcheap.png/280px-Talkcheap.png)
+
+[GitHub](https://github.com/jinqinghua/kim-doc-sandbox)
 [Get Started](#docsify)
 
 <!-- 背景图片 -->
-
 <!-- ![](_images/bg.jpg) -->
 
 <!-- 背景色 -->
-
-![color](#f0f0f0)
+<!-- ![color](#f0f0f0) -->

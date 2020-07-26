@@ -1,19 +1,10 @@
 <!-- _navbar.md -->
 
-* [:us: :uk:](/)
+* 快速导航
+    * 开发相关
+        * [Session Flow (支持 mermaid)](dev/Session-Flow)
+        * [JWT Flow (支持 mermaid)](dev/JWT-Flow)
+        
+    * 我的文档
+        * [合肥市驾驶证，行驶证期满换证指南](my/合肥市驾驶证，行驶证期满换证指南)
 
-* [:cn:](/zh-cn/)
-
-* 入门
-
-  * [快速开始](zh-cn/quickstart.md)
-  * [多页文档](zh-cn/more-pages.md)
-  * [定制导航栏](zh-cn/custom-navbar.md)
-  * [封面](zh-cn/cover.md)
-
-* 配置
-  * [配置项](zh-cn/configuration.md)
-  * [主题](zh-cn/themes.md)
-  * [使用插件](zh-cn/plugins.md)
-  * [Markdown 配置](zh-cn/markdown.md)
-  * [代码高亮](zh-cn/language-highlight.md)
