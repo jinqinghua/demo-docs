@@ -3,7 +3,7 @@
 
 > 演示 markdown + docsify 快速生成在线文档
 
-- 支持目录，搜索, mermaid
+- 支持目录、搜索、mermaid
 - github.io 快速发布
 - 老金出品，必属精品
 
